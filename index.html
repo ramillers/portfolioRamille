@@ -1,23 +1,203 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--CSS-->
-    <link rel="stylesheet" href="assets/css/styles.css">
-    
-    <!--BOX ICONS-->
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <!-- ===== CSS ===== -->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Portfólio | Ramille</title>
-</head>
-<body>
-    <!--HEADER-->
-    <main class="1-main">
+        <!-- ===== BOX ICONS ===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
 
-    </main>
-    <!--FOOTER-->
-    <script src="assets/js/main.js"></script>
-</body>
+        <title>Portfolio | Ramille </title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">Ramille Santana</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Sobre</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Habilidades</a></li>
+                        <li class="nav__item"><a href="#portfolio" class="nav__link">Projetos</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link"><Contate-me></Contate-me></a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home" id="home">
+                <div class="home__container bd-grid">
+                    <h1 class="home__title"><span>HE</span><br>LLO.</h1>
+
+                    <div class="home__scroll">
+                        <a href="#about" class="home__scroll-link"><i class='bx bx-up-arrow-alt' ></i>Deslizar pra baixo</a>
+                    </div>
+
+                    <img src="assets/img/perfil.png" alt="" class="home__img">
+                </div>
+            </section>
+            
+            <!--===== ABOUT =====-->
+            <section class="about section" id="about">
+                <h2 class="section-title">Sobre mim</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/perfil2.png" alt="">
+                    </div>
+
+                    <div>
+                        <h2 class="about__subtitle">I'm Ramille Santana</h2>
+                        <span class="about__profession">Desenvolvedora de Software e graduanda em Ciência da Computação </span>
+                        <p class="about__text">Estudo Ciência da Computação na Universidade Federal do Maranhão e estou atualmente no 4º semestre. Na universidade, estou tendo diversas experiências como trabalhar sendo Desenvolvedora Back-End e Front-End, além de produzir projetos utilizando diversas linguagens, frameworks, ORM´s, sistemas de controle de versão e metodologias ágeis.</p>
+
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/ramille-santana-709965260/" target="_blank" class="about__social-icon"><i class='bx bxl-linkedin' ></i></a>
+                            <a href="https://github.com/ramillers" target="_blank" class="about__social-icon"><i class='bx bxl-github' ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Habilidades</h2>
+
+                <div class="skills__container bd-grid">
+                    <div class="skills__box">
+                        <h3 class="skills__subtitle">Desenvolvimento</h3>
+                        <span class="skills__name">Html</span>
+                        <span class="skills__name">Css</span>
+                        <span class="skills__name">Javascript</span>
+                        <span class="skills__name">Node.js</span>
+                        <span class="skills__name">PostgreeSQL</span>
+                        <span class="skills__name">Java</span>
+                        <span class="skills__name">Python</span>
+                        <span class="skills__name">Prisma ORM</span>
+                        <span class="skills__name">Figma</span>
+
+                        <h3 class="skills__subtitle">Hard & Soft Skills</h3>
+                        <span class="skills__name">Pacote Office</span>
+                        <span class="skills__name">Organização</span>
+                        <span class="skills__name">Proatividade</span>
+                        
+                        <h3 class="skills__subtitle">Idiomas </h3>
+                        <span class="skills__name">Inglês - avançado </span>
+                        <span class="skills__name">Francês - básico </span>
+                        
+                    </div>
+
+                    <div class="skills__img">
+                        <img src="assets/img/skill.jpg" alt="">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== PORTFOLIO =====-->
+            <section class="portfolio section" id="portfolio">
+                <h2 class="section-title">Projetos</h2>
+
+                <div class="portfolio__container bd-grid">
+                    <div class="portfolio__img">
+                        <img src="assets/img/work1.jpeg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://github.com/ramillers/gym-LandingPage" target="_blank" class="portfolio__link-name">Ver detalhes</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work2.png" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://www.figma.com/design/hmTgaj4Kdclk8PQ7R3uSDU/gerador-curriculo?node-id=0-1&t=Zqo6xBpsEfw4V4NZ-0" target="_blank" class="portfolio__link-name">Ver detalhes</a>
+                        </div>
+                    </div>
+                    <div class="portfolio__img">
+                        <img src="assets/img/work3.jpg" alt="">
+
+                        <div class="portfolio__link">
+                            <a href="https://home-page-dkpw.vercel.app/" target="_blank" class="portfolio__link-name">Ver detalhes</a>
+                        </div>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contatos</h2>
+
+                <div class="contact__container bd-grid">
+                    <div class="contact__info">
+                        <h3 class="contact__subtitle">EMAIL</h3>
+                        <span class="contact__text">rmillesantana@gmail.com</span>
+
+                        <h3 class="contact__subtitle">LINKEDIN</h3>
+                        <span class="contact__text">Ramille Santana</span>
+
+                        <h3 class="contact__subtitle">GITHUB</h3>
+                        <span class="contact__text">Ramille Santana</span>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <input type="text" placeholder="Nome" class="contact__input">
+                            <input type="mail" placeholder="Email" class="contact__input">
+                        </div>
+
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input" placeholder="Entre em contato comigo!"></textarea>
+
+                        <input type="submit" value="Enviar" class="contact__button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer section">
+            <div class="footer__container bd-grid">
+                <div class="footer__data">
+                    <h2 class="footer__title">RAMILLE SANTANA</h2>
+                    <p class="footer__text">Eu sou Ramille Santana e este é o meu potfólio pessoal</p>
+                </div>
+
+                <div class="footer__data">
+                    <h2 class="footer__title">EXPLORAR</h2>
+                    <ul>
+                        <li><a href="#home" class="footer__link">Home</a></li>
+                        <li><a href="#about" class="footer__link">Sobre</a></li>
+                        <li><a href="#skills" class="footer__link">Habilidades</a></li>
+                        <li><a href="#portfolio" class="footer__link">Projetos</a></li>
+                        <li><a href="#Contact" class="footer__link">Contatos</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__data">
+                    <h2 class="footer__title">FOLLOW</h2>
+                    <a href="https://www.linkedin.com/in/ramille-santana-709965260/" target="_blank" class="footer__social"><i class='bx bxl-linkedin' ></i></a>
+                    <a href="https://www.youtube.com/channel/UCyd8wl9Y7MOkrXln-FUfE4w" target="_blank" class="footer__social"><i class='bx bxl-youtube' ></i></a>
+                    <a href="https://github.com/ramillers" target="_blank" class="footer__social"><i class='bx bxl-github' ></i></a>
+                </div>
+
+
+            </div>
+        </footer>
+
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
